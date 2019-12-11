@@ -29,7 +29,7 @@
 
 ### API Specifications
 
-Here are list of endpoints your simple REST API Server should support:
+Here's the list of endpoints your simple REST API Server should support:
 
 #### 1. Create User
 
