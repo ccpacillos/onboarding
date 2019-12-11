@@ -1,7 +1,5 @@
 # onboarding
 
-Onboarding Process
-
 ## 1. Setup Development Environment and Tools
 
 - Ubuntu or any Linux-based environment, you can also use WSL within Windows.
