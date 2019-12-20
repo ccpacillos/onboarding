@@ -14,7 +14,7 @@ See guidelines [here](guidelines.md).
 
 #### Login
 
-Login endpoint should be provided using a REST API endpoint as documented [here](rest_api_server.md#2-authenticate-user).
+Login endpoint should be provided using a REST API endpoint as documented [here](rest_api.md#2-authenticate-user).
 
 #### Authentication Header
 
