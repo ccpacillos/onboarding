@@ -1,25 +1,12 @@
 # Simple REST API Server
 
+## Instructions
+
+Create a simple HTTP REST API server that supports the endpoints listed in the API Specifications below.
+
 ## Guidelines
 
-1. Codebase should be written in a Github repository.
-2. Commits should follow the guidelines stated [here](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#-commit-message-guidelines).
-3. Project should be written in Typescript.
-4. Source files should be in a separate directory named `src/` so that they can be isolated for building/compiling.
-5. **Add tests for your project.** Test files should be in a separate directory named `test/`.
-6. Project should include Typescript and ESLint config files.
-7. Server should be built using [Koa module](https://www.npmjs.com/package/koa).
-8. Database setup should be within docker.
-9. Feel free to use appropriate and useful npm modules for your project.
-
-## NPM Scripts
-
-Here are the following `npm` commands you need to add:
-
-1. `npm run docker` - runs the `docker-compose` command to setup database
-2. `npm run lint` - runs the ESLint command to check for lint errors
-3. `npm test` - runs the test files
-4. `npm run build` - runs the Typescript build/compile command
+See guidelines [here](guidelines.md).
 
 ## API Specifications
 
