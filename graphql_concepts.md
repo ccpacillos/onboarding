@@ -24,6 +24,8 @@ type Property {
 }
 ```
 
+_Note: You will need to add a resolver for your scalar `DateTime`._
+
 3. Add the new field `properties` to type `User`:
 
 ```graphql
@@ -34,8 +36,6 @@ type User {
   properties: [Property!]!
 }
 ```
-
-4. Add a `DateTime` scalar.
 
 5. Add the following mutations indicated documented [here](graphql_concepts_api.md).
 
