@@ -2,58 +2,18 @@
 
 ## Instructions
 
-1. Augment your output from the previous task and apply the concepts stated in this document.
-
-2. Add the following new types:
-
-```graphql
-scalar DateTime
-
-enum PROPERTY_TYPE {
-  RESIDENTIAL
-  COMMERCIAL
-  INDUSTRIAL
-  LAND
-}
-
-type Property {
-  uid: ID!
-  kind: PROPERTY_TYPE!
-  location: String!
-  dateAcquired: DateTime!
-}
-```
-
-_Note: You will need to add a resolver for your scalar `DateTime`._
-
-3. Add the new field `properties` to type `User`:
-
-```graphql
-type User {
-  id: ID!
-  email: String!
-  name: String
-  properties: [Property!]!
-}
-```
-
-5. Add the following mutations indicated documented [here](graphql_concepts_api.md).
-
-6. Refer to the concepts in the following section and apply each.
+1. Augment your output from the previous task and apply the following concepts.
 
 ## Concepts
 
 ### Directives
 
-Use a directive for user token authentication.
-
-### Type and Field Resolvers
-
-Add a resolver for the type `User`. In your type resolver, also add a resolver for the field `properties`.
+1. Use a `FIELD_DEFINITION` directive for user token authentication.
+2. This directive should be used for protected mutations and queries.
 
 ### Interfaces
 
-Refactor the type `Property` to use interfaces for each property kind. Also, remove enum `PROPERTY_TYPE`.
+1. Add the following types:
 
 ```graphql
 interface Property {
@@ -90,6 +50,25 @@ type LandProperty implements Property {
   propertyUniqueToLand: Int!
 }
 ```
+
+_Note: You will need to add a resolver for your scalar `DateTime`._
+
+2. In your `User` type, add the new field `properties`:
+
+```graphql
+type User {
+  id: ID!
+  email: String!
+  name: String
+  properties: [Property!]!
+}
+```
+
+3. Add the following mutations documented [here](graphql_concepts_api.md).
+
+### Type and Field Resolvers
+
+1. Add a resolver for the field `properties` of type `User`.
 
 ### Adding Parameters to Field Resolvers
 
