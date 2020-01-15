@@ -72,7 +72,7 @@ type User {
 
 ### Adding Parameters to Field Resolvers
 
-Add an optional parameter named `after` to your field resolver `properties` in your type `User`. This optional property should be used to filter only the properties acquired _after_ a specified date.
+1. Add an optional parameter named `after` to your field resolver `properties` in your type `User`. This optional property should be used to filter only the properties acquired _after_ a specified date.
 
 ```graphql
 type User {
